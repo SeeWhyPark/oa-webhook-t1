@@ -7,6 +7,22 @@ const port = 3000
 //app.get('/', function (req, res) {
 //  res.send('Hello World')
 
+app.get('/oa/:id', (req, res) => getOaWebhook)
+
+function getOaWebhook(req, res){
+    var p = req.params
+    var q = req.query
+
+    console.log(p)
+    console.log(q)
+
+    res.writeHead(200,
+        { 'Content-Type': 'text/html' })
+        res.write('<h1>Hello World!</h1>')
+    res.end();
+}
+
+
 app.get('/:id', (req, res) => {
     const p = req.params
     //console.log(`path : ${p}`)
