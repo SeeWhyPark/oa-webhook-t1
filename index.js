@@ -23,19 +23,19 @@ function getOaWebhook(req, res) {
     res.end();
 }
 
-/*
-app.get('/:id', (req, res) => {
-    const p = req.params
-    //console.log(`path : ${p}`)
-    console.log('path : ' + p)
+
+// app.get('/:id', (req, res) => {
+//     const p = req.params
+//     //console.log(`path : ${p}`)
+//     console.log('path : ' + p)
 
 
-    const q = req.query
-    console.log(q)
+//     const q = req.query
+//     console.log(q)
 
-    res.send(q)
-})
-*/
+//     res.send(q)
+// })
+
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
