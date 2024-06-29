@@ -19,6 +19,8 @@ app.post('/oa/:id', (req, res) => {
 //    console.log(p)
 //    console.log(q)
     console.log(b)
+    console.log(b.message)
+    console.log(b.source)
 
     res.writeHead(200,
         { 'Content-Type': 'text/html' })
