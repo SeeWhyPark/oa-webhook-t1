@@ -10,9 +10,11 @@ const port = 3000
 app.post('/oa/:id', (req, res) => {
     var p = req.params
     var q = req.query
+    var b = req.body
 
-    console.log(p)
-    console.log(q)
+//    console.log(p)
+//    console.log(q)
+    console.log(b)
 
     res.writeHead(200,
         { 'Content-Type': 'text/html' })
