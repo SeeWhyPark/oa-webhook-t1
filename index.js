@@ -24,6 +24,7 @@ app.get('/oa/:id', (req, res) => {
     var p = req.params
     var q = req.query
 
+    console.log('get')
     console.log(p)
     console.log(q)
 
