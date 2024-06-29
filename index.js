@@ -2,6 +2,8 @@
 
 const express = require('express')
 const app = express()
+app.use(express.json())
+app.use(express.urlencoded( {extended: false}))
 const port = 3000
 
 //app.get('/', function (req, res) {
@@ -11,6 +13,7 @@ app.post('/oa/:id', (req, res) => {
     var p = req.params
     var q = req.query
     var b = req.body
+    var c = req.
 
 //    console.log(p)
 //    console.log(q)
