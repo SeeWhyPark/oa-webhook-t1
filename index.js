@@ -15,12 +15,14 @@ app.post('/oa/:id', (req, res) => {
     var p = req.params
     var q = req.query
     var b = req.body
+    var message = req.body.message
+    var source = req.body.source
 
 //    console.log(p)
 //    console.log(q)
     console.log(b)
-    console.log(b.message)
-    console.log(b.source)
+    console.log(message)
+    console.log(source)
 
     res.writeHead(200,
         { 'Content-Type': 'text/html' })
