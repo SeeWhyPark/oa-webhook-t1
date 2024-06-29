@@ -7,6 +7,7 @@ const port = 3000
 //app.get('/', function (req, res) {
 //  res.send('Hello World')
 
+app.post('/oa/:id', (req, res) => getOaWebhook)
 app.get('/oa/:id', (req, res) => getOaWebhook)
 
 function getOaWebhook(req, res){
