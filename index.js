@@ -10,7 +10,7 @@ const port = 3000
 app.post('/oa/:id', (req, res) => getOaWebhook)
 app.get('/oa/:id', (req, res) => getOaWebhook)
 
-function getOaWebhook(req, res){
+function getOaWebhook(req, res) {
     var p = req.params
     var q = req.query
 
@@ -19,11 +19,11 @@ function getOaWebhook(req, res){
 
     res.writeHead(200,
         { 'Content-Type': 'text/html' })
-        res.write('<h1>Hello World!</h1>')
+    res.write('<h1>Hello World!</h1>')
     res.end();
 }
 
-
+/*
 app.get('/:id', (req, res) => {
     const p = req.params
     //console.log(`path : ${p}`)
@@ -35,6 +35,7 @@ app.get('/:id', (req, res) => {
 
     res.send(q)
 })
+*/
 
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`)
