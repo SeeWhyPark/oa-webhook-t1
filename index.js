@@ -9,19 +9,32 @@ const app = express()
 
 const port = 3000
 
+// const ob = {
+//     a : "aa",
+//     b : 1,
+//     c : "ccc"
+// }
+
+// //JSON.parse(ob)
+// JSON.stringify(ob)
+// console.log(ob)
+
 //app.get('/', function (req, res) {
 //  res.send('Hello World')
 
 app.post('/oa/:id', (req, res) => {
     var b = req.body
     var h = req.header
+
+    
 //    var message = req.body.message
 //    var source = req.body.source
 
 //    console.log(p)
 //    console.log(q)
-    console.log(b)
-    console.log(JSON.parse(b))
+    console.log(JSON.stringify(b))
+
+//    console.log(JSON.stringify(b, null, 2))
 //    console.log(message)
 //    console.log(source)
     console.log(h)
