@@ -24,7 +24,7 @@ const port = 3000
 
 app.post('/oa/:id', (req, res) => {
     var b = req.body
-    var h = req.header
+    var h = req.headers
 
     
 //    var message = req.body.message
