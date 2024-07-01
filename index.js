@@ -23,6 +23,7 @@ app.post('/oa/:id', (req, res) => {
 //    console.log(p)
 //    console.log(q)
     console.log(b)
+    console.log(JSON.parse(b))
     console.log(message)
     console.log(source)
     console.log(h)
