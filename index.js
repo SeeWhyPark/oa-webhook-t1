@@ -13,19 +13,17 @@ const port = 3000
 //  res.send('Hello World')
 
 app.post('/oa/:id', (req, res) => {
-    var p = req.params
-    var q = req.query
     var b = req.body
     var h = req.header
-    var message = req.body.message
-    var source = req.body.source
+//    var message = req.body.message
+//    var source = req.body.source
 
 //    console.log(p)
 //    console.log(q)
     console.log(b)
     console.log(JSON.parse(b))
-    console.log(message)
-    console.log(source)
+//    console.log(message)
+//    console.log(source)
     console.log(h)
 
     res.writeHead(200,
