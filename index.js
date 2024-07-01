@@ -32,7 +32,7 @@ app.post('/oa/:id', (req, res) => {
 
 //    console.log(p)
 //    console.log(q)
-    console.log(JSON.stringify(b))
+    console.log("request body : ", JSON.stringify(b))
 
 //    console.log(JSON.stringify(b, null, 2))
 //    console.log(message)
